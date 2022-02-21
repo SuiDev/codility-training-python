@@ -14,6 +14,21 @@ def solution(X, A):
 
     return -1
 
+# fixed: listからsetを使うように変更し、パフォーマンスを向上
+"""
+def solution(X, A):
+    leaves_list = set()
+  
+    for i, value in enumerate(A):
+        if value not in leaves_list:
+            leaves_list.add(value)
+
+        if len(leaves_list) == X:
+            return i
+
+    return -1
+"""
+
 # the other good answer
 """
 def solution(distance, falls):
